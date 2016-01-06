@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,700,600,300);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+@font-face {
+  font-family: 'Thirsty rough';
+  src: url("../fonts/Thirsty rough/yellow_design_studio_-_thirstyroughltone-webfont.eot");
+  src: url("../fonts/Thirsty rough/yellow_design_studio_-_thirstyroughltone-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Thirsty rough/yellow_design_studio_-_thirstyroughltone-webfont.woff2") format("woff2"), url("../fonts/Thirsty rough/yellow_design_studio_-_thirstyroughltone-webfont.woff") format("woff"), url("../fonts/Thirsty rough/yellow_design_studio_-_thirstyroughltone-webfont.ttf") format("truetype"), url("../fonts/Thirsty rough/yellow_design_studio_-_thirstyroughltone-webfont.svg#thirsty_roughlight_one") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 4, ../sass/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_reset.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px 'Source Sans Pro', sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* line 6, ../sass/_reset.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_reset.scss */
+select, input, textarea {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_reset.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_reset.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_reset.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_reset.scss */
+a:link, a:visited {
+  font: 14px 'Source Sans Pro', sans-serif;
+  color: #4C8BBF;
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/layout/_header.scss */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  text-align: left;
+  color: #fff;
+  background-color: #acd373;
+  box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.06);
+}
+/* line 9, ../sass/layout/_header.scss */
+header .logo {
+  float: left;
+}
+/* line 11, ../sass/layout/_header.scss */
+header .logo a {
+  color: #f7f7f7;
+  font: 400 45px 'Thirsty rough', sans-serif;
+  text-shadow: 1.5px 2.6px 0 rgba(0, 0, 0, 0.25);
+}
+/* line 17, ../sass/layout/_header.scss */
+header .main-navigation {
+  float: right;
+  text-align: center;
+}
+@media screen and (min-width: 825px) {
+  /* line 17, ../sass/layout/_header.scss */
+  header .main-navigation {
+    margin-top: 16px;
+  }
+}
+/* line 23, ../sass/layout/_header.scss */
+header .main-navigation li {
+  display: inline-block;
+  float: left;
+}
+/* line 27, ../sass/layout/_header.scss */
+header .main-navigation a {
+  display: block;
+  margin: 0 10px;
+  padding: 5px 0;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 900;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+/* line 37, ../sass/layout/_header.scss */
+header .main-navigation a:hover {
+  color: #f7f7f7;
+  border-bottom: 3px solid #f2f2f2;
+}
+
+/* line 1, ../sass/landing/_hero.scss */
+.hero {
+  overflow: hidden;
+  background: url("../images/hero-bg.jpg") center no-repeat;
+  background-size: cover;
+}
+/* line 5, ../sass/landing/_hero.scss */
+.hero .hero-title {
+  max-width: 994px;
+  margin: 231px auto 181px;
+  text-align: center;
+  color: #f7f7f7;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 58px;
+}
+/* line 15, ../sass/landing/_hero.scss */
+.hero p {
+  margin-top: 24px;
+  color: #f7f7f7;
+  text-align: center;
+  font: 24px 'DroidSerif';
+  font-style: italic;
+  line-height: 22px;
+}
+/* line 23, ../sass/landing/_hero.scss */
+.hero a {
+  display: block;
+  width: 49px;
+  height: 27px;
+  margin: 100px auto;
+}
+/* line 28, ../sass/landing/_hero.scss */
+.hero a .fa-angle-down {
+  font-size: 90px;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+/* line 1, ../sass/landing/_about.scss */
+.about-us {
+  overflow: hidden;
+}
+/* line 3, ../sass/landing/_about.scss */
+.about-us .container {
+  background: url("../images/about-us-item-01.png") right no-repeat;
+}
+/* line 5, ../sass/landing/_about.scss */
+.about-us h2 {
+  display: flex;
+  align-items: center;
+  width: 247px;
+  margin-top: 137px;
+  color: #454545;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+/* line 14, ../sass/landing/_about.scss */
+.about-us h2 img {
+  float: left;
+  margin-right: 10px;
+}
+/* line 19, ../sass/landing/_about.scss */
+.about-us .description-first,
+.about-us .description-second {
+  float: left;
+  clear: both;
+  max-width: 768px;
+  margin: 30px 0;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* line 29, ../sass/landing/_about.scss */
+.about-us a {
+  clear: both;
+  float: left;
+  width: 142px;
+  height: 40px;
+  margin: 46px 0 11px;
+  color: #acd373;
+  font: 18px 'DroidSerif';
+  line-height: 40px;
+  text-align: center;
+  font-style: italic;
+  border: 1px solid #acd373;
+  transition: 0.5s;
+}
+/* line 42, ../sass/landing/_about.scss */
+.about-us a:hover {
+  color: #fff;
+  background: #acd373;
+}
+
+/* line 48, ../sass/landing/_about.scss */
+.about-us-video {
+  overflow: hidden;
+  margin-top: 50px;
+  background: url("../images/about-us-video-bg.png") center no-repeat;
+  background-size: cover;
+}
+/* line 53, ../sass/landing/_about.scss */
+.about-us-video img {
+  display: block;
+  margin: 190px auto;
+}
+
+/* line 1, ../sass/landing/_services.scss */
+.services {
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+/* line 4, ../sass/landing/_services.scss */
+.services h2 {
+  margin: 100px auto 15px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  color: #454545;
+}
+/* line 10, ../sass/landing/_services.scss */
+.services h2 span {
+  color: #acd373;
+}
+/* line 14, ../sass/landing/_services.scss */
+.services .services-description {
+  text-align: center;
+  color: #454545;
+  font-family: "Droid Serif";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* line 21, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 27, ../sass/style.scss */
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+/* line 12, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 32, ../sass/style.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}

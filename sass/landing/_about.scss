@@ -1,0 +1,57 @@
+.about-us {
+  overflow: hidden;
+  .container{background: url('../images/about-us-item-01.png') right no-repeat;
+  }
+  h2{
+    display: flex;
+    align-items: center;
+    width: 247px;
+    margin-top: 137px;
+    color: #454545;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    img {
+      float: left;
+      margin-right:10px;
+    }
+  }
+  .description-first,
+  .description-second {
+    float: left;
+    clear: both;
+    max-width: 768px;
+    margin: 30px 0;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  a{
+    clear: both;
+    float: left;
+    width: 142px;
+    height: 40px;
+    margin: 46px 0 11px;
+    color: #acd373;
+    font: 18px 'DroidSerif';
+    line-height: 40px;
+    text-align: center;
+    font-style: italic;
+    border: 1px solid #acd373;
+    transition:0.5s;
+    &:hover {
+      color: #fff;
+      background: #acd373;
+    }
+  }
+}
+.about-us-video {
+  overflow: hidden;
+  margin-top:50px;
+  background: url('../images/about-us-video-bg.png') center no-repeat;
+  background-size: cover;
+  img {
+    display: block;
+    margin: 190px auto;
+  }
+}

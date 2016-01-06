@@ -1,0 +1,21 @@
+.services{
+  overflow: hidden;
+  background-color: #f7f7f7;
+  h2{
+    margin:100px auto 15px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: #454545;
+    span{
+      color: #acd373;
+    }
+  }
+  .services-description{
+    text-align: center;
+    color: #454545;
+    font-family: "Droid Serif";
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
